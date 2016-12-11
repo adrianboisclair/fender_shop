@@ -1,0 +1,13 @@
+<article class="panel panel-default">
+    <div class="panel-header">Category: <span class="panel-category">{{getCategory()}}</span></div>
+    <div class="panel-body">
+        <ul id="related-items">
+            <li *ngFor="let item of products">
+                <img src="{{item.images[0]}}" />
+                {{ item.skuDisplayName_en[0] }} <br>
+                Located in {{ item.productType }} | {{ item.productSubType }} <br>
+                {{ item.bodyShape }} <br>
+            </li>
+        </ul>
+    </div>
+</article>

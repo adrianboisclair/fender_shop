@@ -1,0 +1,39 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF;
+  cursor: pointer; }
+
+a:hover,
+a:active {
+  color: #00B7FF;
+  text-decoration: underline; }
+
+a.danger {
+  color: red; }
+
+.spacing {
+  margin-bottom: 20px; }
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red; }
+
+.panel-header {
+  padding: 20px; }
+
+.navbar-header {
+  line-height: 2;
+  text-align: center;
+  width: 100%; }
+
+footer.panel-footer .config {
+  width: 100%; }
+
+@media (max-width: 1024px) {
+  #related-items li {
+    float: none;
+    margin: 10px 0;
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
