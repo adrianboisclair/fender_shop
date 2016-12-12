@@ -19,21 +19,8 @@ input.ng-invalid.ng-touched {
 
 .panel-header {
   padding: 20px; }
-
-.panel.panel-default {
+.panel .panel-default {
   border: none; }
-
-.navbar.navbar-default {
-  border: none;
-  background: none; }
-
-.navbar-header {
-  line-height: 2;
-  text-align: center;
-  width: 100%; }
-
-footer.panel-footer .config {
-  width: 100%; }
 
 @media (max-width: 1024px) {
   #related-items li {

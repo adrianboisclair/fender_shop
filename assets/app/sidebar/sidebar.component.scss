@@ -1,0 +1,15 @@
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    background-color: #d12f27;
+}
+aside nav {
+    &:first-child {
+        border: none;
+        background: none;
+        text-align: center;
+        h4 {
+            font-size: 20px;
+        }
+    }
+}

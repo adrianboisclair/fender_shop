@@ -33,6 +33,8 @@ img {
   .product-info li:first-child {
     font-weight: bold;
     font-size: larger; }
+.product-total {
+  font-weight: bold; }
 .product-wrapper {
   min-height: 400px; }
 

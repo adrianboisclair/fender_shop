@@ -14,6 +14,7 @@ img {
     font-weight: bold;
     text-transform: capitalize;
 }
+
 .product {
     &-container {
         align-items: center;
@@ -39,6 +40,9 @@ img {
                 font-size: larger;
             }
         }
+    }
+    &-total {
+        font-weight:bold;
     }
     &-wrapper {
         min-height: 400px;

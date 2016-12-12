@@ -1,7 +1,9 @@
 <article class="panel panel-default">
-    <div class="panel-header">Category: <span class="panel-category">{{getCategory()}}</span></div>
+    <div class="panel-header">
+        <span class="product-total">{{totalProducts}}</span> Total Products in Category <span class="panel-category">"{{getCategory()}}"</span>
+    </div>
     <div class="panel-body">
-        <div *ngFor="let item of products" class="product-wrapper col-sm-4">
+        <div *ngFor="let item of products" class="product-wrapper col-sm-6 col-md-4 col-lg-3">
             <div class="product-container">
                 <div class="product-image-container">
                     <img src="{{item.images[0]}}" />

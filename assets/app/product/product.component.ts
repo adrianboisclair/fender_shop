@@ -16,6 +16,7 @@ export class ProductComponent implements OnInit, OnDestroy {
     private subscription:Subscription;
     category:string = 'guitars';
     products:any;
+    totalProducts:number;
     rel:any;
     sub:any;
 
@@ -33,6 +34,7 @@ export class ProductComponent implements OnInit, OnDestroy {
                 .subscribe(
                     result => {
                         this.products = result;
+                        this.totalProducts = result.length;
                         return result;
                     }
                 );

@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 @Component({
     selector: 'fender-content',
     template: `
-    <main class="col-sm-10">
+    <main class="col-sm-8 col-md-10">
         <router-outlet></router-outlet>
     </main>`,
     styles: [`

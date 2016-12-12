@@ -14,5 +14,5 @@ export class FenderHeader {
         { name: 'Customize', url: '#custom' },
         { name: 'Dealers', url: '#dealers' }
     ];
-    searchBoxText:string = 'Search Box Here';
+    searchBoxText:string = 'search';
 }

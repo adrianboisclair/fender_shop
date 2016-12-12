@@ -21,23 +21,13 @@ input {
         border: 1px solid red;
     }
 }
-.panel-header {
-    padding: 20px;
-}
-.panel.panel-default {
-    border: none;
-}
-.navbar.navbar-default {
-    border: none;
-    background: none;
-}
-.navbar-header {
-    line-height: 2;
-    text-align: center;
-    width: 100%;
-}
-footer.panel-footer .config {
-    width: 100%;
+.panel {
+    &-header {
+        padding: 20px;
+    }
+    .panel-default {
+        border: none;
+    }
 }
 @media (max-width: $med-screen) {
     #related-items li {

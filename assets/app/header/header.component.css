@@ -2,9 +2,12 @@ input.form-control {
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  box-shadow: none; }
+  box-shadow: none;
+  width: 80px;
+  transition: width ease-in-out .2s; }
 input.form-control:active, input.form-control:focus {
-  border-color: black; }
+  border-color: black;
+  width: 120px; }
 
 .brand-container {
   flex-grow: 1;
@@ -17,7 +20,7 @@ input.form-control:active, input.form-control:focus {
   margin: auto; }
 
 .input-group {
-  width: 160px; }
+  width: auto; }
 
 .menu a {
   color: #666;
@@ -36,8 +39,13 @@ nav.menu {
   display: flex;
   flex: 1; }
 
+.navbar.navbar-default {
+  border: none;
+  background: none; }
 .navbar-header {
-  width: auto; }
+  line-height: 2;
+  text-align: center;
+  width: 100%; }
 
 .right-container {
   align-items: center;
