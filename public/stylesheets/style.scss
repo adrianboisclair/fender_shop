@@ -10,6 +10,9 @@ a {
 a.danger {
     color: red;
 }
+.app-container {
+    margin-top: 40px;
+}
 .spacing {
     margin-bottom: 20px;
 }
@@ -20,6 +23,13 @@ input {
 }
 .panel-header {
     padding: 20px;
+}
+.panel.panel-default {
+    border: none;
+}
+.navbar.navbar-default {
+    border: none;
+    background: none;
 }
 .navbar-header {
     line-height: 2;
