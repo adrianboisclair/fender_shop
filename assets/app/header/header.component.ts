@@ -3,6 +3,12 @@ import { Component } from "@angular/core";
 @Component({
     selector: 'fender-header',
     styles: [`
+    input.form-control {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        box-shadow: none;
+    }
     .global-header {
         display: flex;
         margin: auto;
@@ -14,6 +20,9 @@ import { Component } from "@angular/core";
     }
     .brand-container img {
         height: 64px;
+    }
+    .input-group {
+        width: 160px;
     }
     nav.menu {
         align-items: center;
@@ -36,14 +45,17 @@ import { Component } from "@angular/core";
     .navbar-header {
         width: auto;
     }
-    .search-container {
+    .right-container {
         align-items: center;
         display: flex;
         flex-grow: 1;
     }
     .search-box {
-        flex: 1;
+        flex: 2;
         text-align: center;
+    }
+    .signin {
+        flex: 1;
     }
     `],
     template: `
@@ -53,10 +65,13 @@ import { Component } from "@angular/core";
         </nav>
         <div class="brand-container">
             <img src="{{brand_image_url}}" alt="{{brand}} Logo"></div>
-        <div class="search-container">
+        <div class="right-container">
             <div class="search-box">
-                Search Box Here
+                <div class="input-group">
+                  <input type="text" class="form-control" aria-label="Search" placeholder="{{searchBoxText}}">
+                </div>
             </div>
+            <div class="signin">Sign In</div>
         </div>
     </header>
     `
@@ -66,16 +81,21 @@ export class FenderHeader {
     brand_image_url:string = '/images/fender_logo.png';
     links:any = [
         {
-            name: 'Products'
+            name: 'Products',
+            url: '#'
         },
         {
-            name: 'Holiday'
+            name: 'Holiday',
+            url: '#'
         },
         {
-            name: 'Customize'
+            name: 'Customize',
+            url: '#'
         },
         {
-            name: 'Dealers'
+            name: 'Dealers',
+            url: '#'
         }
     ];
+    searchBoxText:string = 'Search Box Here';
 }

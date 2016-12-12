@@ -16,21 +16,15 @@ import {Subscription} from "rxjs/Subscription";
         }
         .config {
             display: inline-block;
-            text-align: right;
             font-size: 12px;
+            text-align: right;
             width: 19%;
         }
         img {
-            height: auto;
-            width: 100%;
             display: block;
+            height: auto;
             margin: 0 auto;
-        }
-        .related-items {
-            padding: 0;
-        }
-        .product-wrapper {
-            min-height: 400px;
+            width: 100%;
         }
         .product-container {
             align-items: center;
@@ -41,8 +35,15 @@ import {Subscription} from "rxjs/Subscription";
             margin-bottom: 16px;
             text-align: center;
         }
-        .product {
+        .product-image-container {
             min-height: 200px;
+        }
+        .product-info {
+            background: white;
+            text-align: left;
+        }
+        .product-wrapper {
+            min-height: 400px;
         }
     `]
 })
