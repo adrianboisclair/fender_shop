@@ -29,7 +29,16 @@ img {
     }
     &-info {
         background: white;
+        padding: 0;
+        margin: 0;
+        list-style: none;
         text-align: left;
+        li {
+            &:first-child {
+                font-weight: bold;
+                font-size: larger;
+            }
+        }
     }
     &-wrapper {
         min-height: 400px;
