@@ -1,13 +1,39 @@
 <article class="panel panel-default">
     <div class="panel-header">Category: <span class="panel-category">{{getCategory()}}</span></div>
     <div class="panel-body">
-        <ul id="related-items">
-            <li *ngFor="let item of products">
-                <img src="{{item.images[0]}}" />
-                {{ item.skuDisplayName_en[0] }} <br>
-                Located in {{ item.productType }} | {{ item.productSubType }} <br>
-                {{ item.bodyShape }} <br>
-            </li>
-        </ul>
+        <div id="related-items">
+            <div *ngFor="let item of products" class="product-wrapper col-sm-4">
+                <div class="product-container">
+                    <div class="product">
+                        <img src="{{item.images[0]}}" />
+                    </div>
+                </div>
+                <div class="product-info">
+                    <ul>
+                        <li *ngIf="item.skuDisplayName_en[0]">
+                            {{ item.skuDisplayName_en[0] }}
+                        </li>
+                        <li *ngIf="item.productType">
+                            Located in {{ item.productType }}
+                        </li>
+                        <li *ngIf="item.productSubType">
+                            {{ item.productSubType }}
+                        </li>
+                        <li *ngIf="item.bodyShape">
+                            Body Style / Shape: {{ item.bodyShape }}
+                        </li>
+                        <li *ngIf="item.series">
+                            Series: {{ item.series }}
+                        </li>
+                        <li *ngIf="item.upc[0]">
+                            UPC: {{ item.upc[0] }}
+                        </li>
+                        <li *ngIf="item.productNo">
+                            Series: {{ item.productNo }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </article>

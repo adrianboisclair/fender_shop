@@ -2,6 +2,13 @@ import { Component } from "@angular/core";
 
 @Component({
     selector: 'fender-sidebar',
+    styles: [`
+    .nav-pills>li.active>a,
+    .nav-pills>li.active>a:focus,
+    .nav-pills>li.active>a:hover {
+        background-color: #d12f27;
+    }
+    `],
     template: `
 <aside class="sidebar col-sm-2">
     <nav class="navbar navbar-default">

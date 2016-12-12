@@ -4,11 +4,11 @@ import { Component } from "@angular/core";
     selector: 'fender-footer',
     styles: [`
     .global-footer {
-        background-color: white;
+        background-color: #f9f9f9;
         color: red;
         font-size: 14px;
         margin-top: 64px;
-        padding: 0 16px 64px;
+        padding: 30px;
         text-align: center;
         width: 100%;
     }

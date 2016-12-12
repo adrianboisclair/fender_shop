@@ -19,6 +19,7 @@ import { Component } from "@angular/core";
         align-items: center;
         display: flex;
         flex: 1;
+        padding-left: 100px;
     }
     .menu a {
         color: #666;

@@ -26,18 +26,23 @@ import {Subscription} from "rxjs/Subscription";
             display: block;
             margin: 0 auto;
         }
-        ul {
-            list-style: none;
+        .related-items {
             padding: 0;
         }
-        li {
-            box-shadow: 0px 1px 5px lightgray;
-            float: left;
-            height: auto;
-            margin: 10px;
-            min-height: 350px;
+        .product-wrapper {
+            min-height: 400px;
+        }
+        .product-container {
+            align-items: center;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 16px;
             text-align: center;
-            width: 30%;
+        }
+        .product {
+            min-height: 200px;
         }
     `]
 })
