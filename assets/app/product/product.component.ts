@@ -8,55 +8,18 @@ import {Subscription} from "rxjs/Subscription";
 
 @Component({
     selector: 'app-view',
-    templateUrl: './product.component.html',
-    styles: [`
-        .panel-category {
-            font-weight: bold;
-            text-transform: capitalize;
-        }
-        .config {
-            display: inline-block;
-            font-size: 12px;
-            text-align: right;
-            width: 19%;
-        }
-        img {
-            display: block;
-            height: auto;
-            margin: 0 auto;
-            width: 100%;
-        }
-        .product-container {
-            align-items: center;
-            background-color: #f9f9f9;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-bottom: 16px;
-            text-align: center;
-        }
-        .product-image-container {
-            min-height: 200px;
-        }
-        .product-info {
-            background: white;
-            text-align: left;
-        }
-        .product-wrapper {
-            min-height: 400px;
-        }
-    `]
+    styleUrls: ['./product.component.css'],
+    templateUrl: './product.component.html'
 })
 export class ProductComponent implements OnInit, OnDestroy {
 
     private subscription:Subscription;
-    products:any;
     category:string = 'guitars';
-    sub:any;
+    products:any;
     rel:any;
+    sub:any;
 
-    constructor(private productService:ProductService, private route:ActivatedRoute) {
-    }
+    constructor(private productService:ProductService, private route:ActivatedRoute) { }
 
     ngOnInit() {
         this.getProductsByCategory();

@@ -1,0 +1,60 @@
+input {
+    &.form-control {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        box-shadow: none;
+    }
+    &.form-control:active,
+    &.form-control:focus {
+        border-color: black;
+    }
+}
+.brand-container {
+    flex-grow: 1;
+    text-align: center;
+    img {
+        height: 64px;
+    }
+}
+.global-header {
+    display: flex;
+    margin: auto;
+}
+.input-group {
+    width: 160px;
+}
+.menu a {
+    color: #666;
+    flex-grow: 1;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: .4px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav {
+    &.menu {
+        align-items: center;
+        display: flex;
+        flex: 1;
+    }
+}
+.navbar-header {
+    width: auto;
+}
+.right-container {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+}
+.search-box {
+    flex: 2;
+    text-align: center;
+}
+.signin {
+    flex: 1;
+}
