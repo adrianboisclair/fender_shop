@@ -2,40 +2,57 @@ img {
   display: block;
   height: auto;
   margin: 0 auto;
-  width: 100%; }
+  width: 100%;
+}
 
 .config {
   display: inline-block;
   font-size: 12px;
   text-align: right;
-  width: 19%; }
+  width: 19%;
+}
 
 .panel-category {
   font-weight: bold;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+}
 
 .product-container {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f9f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 16px;
-  text-align: center; }
+  text-align: center;
+}
 .product-image-container {
-  min-height: 200px; }
+  min-height: 200px;
+}
 .product-info {
   background: white;
   padding: 0;
   margin: 0;
   list-style: none;
-  text-align: left; }
-  .product-info li:first-child {
-    font-weight: bold;
-    font-size: larger; }
+  text-align: left;
+}
+.product-info li:first-child {
+  font-weight: bold;
+  font-size: larger;
+}
 .product-total {
-  font-weight: bold; }
+  font-weight: bold;
+}
 .product-wrapper {
-  min-height: 400px; }
-
+  min-height: 400px;
+}
 /*# sourceMappingURL=product.component.css.map */

@@ -21,8 +21,12 @@ input {
     }
 }
 .global-header {
-    display: flex;
+    box-shadow: 1px 1px 1px lightgray;
     margin: auto;
+}
+.flex-container {
+    max-width: 1266px;
+    display: flex;
 }
 .input-group {
     width: auto;
