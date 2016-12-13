@@ -3,28 +3,71 @@ input.form-control {
   border-left: 0;
   border-right: 0;
   box-shadow: none;
-  width: 80px;
+  text-align: center;
   -webkit-transition: width ease-in-out .2s;
   transition: width ease-in-out .2s;
+  width: 80px;
 }
 input.form-control:active, input.form-control:focus {
   border-color: black;
   width: 120px;
+  text-align: left;
 }
 
-.brand-container {
+.global-header {
+  background: white;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  margin: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.global-header .brand-container {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   text-align: center;
 }
-.brand-container img {
+.global-header .brand-container img {
   height: 64px;
+  -webkit-transition: height .2s ease-in-out;
+  transition: height .2s ease-in-out;
 }
-
-.global-header {
+.global-header .search-box {
+  opacity: 1;
+  -webkit-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+}
+.global-header .menu a,
+.global-header .signin {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+.global-header::after {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+}
+.global-header.affix {
   box-shadow: 1px 1px 1px lightgray;
-  margin: auto;
+}
+.global-header.affix .brand-container img {
+  height: 40px;
+}
+.global-header.affix .search-box {
+  opacity: 0;
+  -webkit-transition: height .2s ease-in-out;
+  transition: height .2s ease-in-out;
+}
+.global-header.affix:hover::after {
+  opacity: 1;
+}
+.global-header.affix .menu a,
+.global-header.affix .signin {
+  -webkit-transform: scale(0.8, 0.8);
+          transform: scale(0.8, 0.8);
 }
 
 .flex-container {
@@ -86,6 +129,11 @@ nav.menu {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
+@media (max-width: 480px) {
+  .right-container {
+    display: none;
+  }
+}
 
 .search-box {
   -webkit-box-flex: 2;
@@ -95,8 +143,19 @@ nav.menu {
 }
 
 .signin {
+  color: #666;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  -ms-flex: 1;
+      flex: 1;
+  letter-spacing: .4px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=header.component.css.map */

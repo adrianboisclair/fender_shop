@@ -1,4 +1,4 @@
-<header class="global-header">
+<header class="global-header" [class.affix]="navIsFixed">
     <div class="flex-container container">
         <nav class="menu hidden-xs">
             <a href="#" *ngFor="let link of links">{{link.name}}</a>

@@ -1,31 +1,40 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
 
 a {
   color: #404040;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 a.danger {
-  color: red; }
+  color: red;
+}
 
 .app-container {
-  margin-top: 40px; }
+  margin-top: 100px;
+}
 
 .spacing {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
 
 input.ng-invalid.ng-touched {
-  border: 1px solid red; }
+  border: 1px solid red;
+}
 
 .panel-header {
-  padding: 20px; }
+  padding: 20px;
+}
 .panel .panel-default {
-  border: none; }
+  border: none;
+}
 
 @media (max-width: 1024px) {
   #related-items li {
     float: none;
     margin: 10px 0;
-    width: 100%; } }
-
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
