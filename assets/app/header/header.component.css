@@ -25,8 +25,8 @@ input.form-control:active, input.form-control:focus {
 }
 .global-header .brand-container {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+      -ms-flex: 1;
+          flex: 1;
   text-align: center;
 }
 .global-header .brand-container img {
@@ -84,8 +84,8 @@ input.form-control:active, input.form-control:focus {
 .menu a {
   color: #666;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+      -ms-flex: 1;
+          flex: 1;
   font-family: sans-serif;
   font-size: 12px;
   font-weight: bold;
@@ -126,8 +126,8 @@ nav.menu {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 @media (max-width: 480px) {
   .right-container {
@@ -146,12 +146,12 @@ nav.menu {
   color: #666;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
-  flex-grow: 1;
+  -ms-flex: 1;
+      flex: 1;
   font-family: sans-serif;
   font-size: 12px;
   font-weight: bold;
-  -ms-flex: 1;
-      flex: 1;
+  flex: 1;
   letter-spacing: .4px;
   padding: 10px;
   text-align: center;
