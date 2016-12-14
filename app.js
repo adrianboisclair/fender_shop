@@ -9,7 +9,6 @@ var appRoutes = require('./routes/app');
 var productRoutes = require('./routes/products');
 
 var app = express();
-mongoose.connect('localhost:27017/coffee_shop');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
