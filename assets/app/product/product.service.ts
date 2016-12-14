@@ -13,7 +13,7 @@ export class ProductService {
     constructor(private http:Http) {}
 
     getProductsByCategory(category:string) {
-        return this.http.get('http://localhost:3000/products/category/' + category)
+        return this.http.get('http://fendershop.herokuapp.com/products/category/' + category)
             .map((response:Response) => {
                 const products = response.json().products;
                 this.products = products;
