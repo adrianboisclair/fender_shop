@@ -8,7 +8,9 @@ var mongoose = require('mongoose');
 var appRoutes = require('./routes/app');
 var productRoutes = require('./routes/products');
 
+
 var app = express();
+mongoose.connect('test_user:test_user_db@ds133338.mlab.com:33338/fender_shop');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
