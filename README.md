@@ -6,3 +6,8 @@ How to use:
 - Run "npm run build" to run the development build script.
 - Run "npm start" in a new command line/ terminal window. 
 - Browse to localhost:3000
+
+OR
+==
+
+-visit live url at https://fendershop.herokuapp.com/
